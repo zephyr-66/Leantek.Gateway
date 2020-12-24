@@ -1,0 +1,19 @@
+﻿<Application x:Class="Leantek.Gateway.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml">
+                </ResourceDictionary>
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml">
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="FontAwesome">
+                <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/Resources/Img/IconFont/#Font Awesome 5 Free Solid" />
+                <Setter Property="TextBlock.TextAlignment" Value="Center"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
