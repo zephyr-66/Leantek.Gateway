@@ -1,27 +1,30 @@
-﻿<Border x:Class="Leantek.Gateway.View.AddMQTT"
+﻿<Border x:Class="Leantek.Gateway.View.AddNode"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
              xmlns:hc="https://handyorg.github.io/handycontrol"
              xmlns:ViewModels="clr-namespace:Leantek.Gateway.ViewModels"
-             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:AddMQTTViewModel}"
+             DataContext="{dxmvvm:ViewModelSource Type=ViewModels:AddNodeViewModel}"
+             mc:Ignorable="d" 
              Background="{DynamicResource RegionBrush}"
-             Height="480" Width="520" CornerRadius="10" >
+             d:DesignHeight="450" Width="580">
     <Grid>
         <DockPanel>
-            <GroupBox DockPanel.Dock="Top" Header="添加服务" Padding="10,5" Background="{DynamicResource RegionBrush}">
+            <GroupBox DockPanel.Dock="Top" Header="添加节点" Padding="5,5" Background="{DynamicResource RegionBrush}">
                 <StackPanel Margin="0,0,0,0">
                     <hc:Row Margin="0,10,0,0">
                         <hc:Col Span="3">
                             <TextBlock HorizontalAlignment="Left"  Text="名称" Style="{StaticResource TextBlockDefault}"/>
                         </hc:Col>
-                        <hc:Col Span="9">
+                        <hc:Col Span="8">
                             <hc:TextBox Text="{Binding serviceModel.Name}"/>
                         </hc:Col>
-                        <hc:Col Span="3">
+                        <hc:Col Span="3" Offset="2">
                             <TextBlock HorizontalAlignment="Left" Text="连接类型" Style="{StaticResource TextBlockDefault}"/>
                         </hc:Col>
-                        <hc:Col Span="9">
+                        <hc:Col Span="8">
                             <hc:ComboBox Text="{Binding serviceModel.ServiceType}"/>
                         </hc:Col>
                     </hc:Row>

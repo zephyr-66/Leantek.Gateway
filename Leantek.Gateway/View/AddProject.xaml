@@ -41,7 +41,6 @@
                     </hc:Row>
                 </StackPanel>
             </DockPanel>
-
         </Grid>
     </hc:TransitioningContentControl>
 </UserControl>
